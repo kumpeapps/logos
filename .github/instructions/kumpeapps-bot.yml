@@ -1,0 +1,29 @@
+compliance:
+  issue_types: [bug, feature, task]
+
+  enforce:
+    rebase_only_merge: false
+    default_branch_ruleset: false
+    require_pull_request: false
+    pull_request_allowed_merge_methods: [rebase]
+    required_status_check: false
+    merge_queue: false
+    merge_queue_method: REBASE
+
+  pull_request:
+    base_branches: [dev, main, master]
+    allow_dev_promotion: true
+    require_branch_naming: false
+    require_issue_reference: false
+    require_issue_open: false
+    require_issue_type_match: false
+    require_issue_autoclose: false
+    require_rebase: false
+    require_single_commit: false
+    require_commit_prefix: false
+
+  security:
+    dependabot_gate_enabled: false
+    secret_scanning_gate_enabled: false
+    local_secret_scanning_enabled: false
+    min_severity: high
