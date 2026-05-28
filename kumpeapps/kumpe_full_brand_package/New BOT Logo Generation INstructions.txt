@@ -1,0 +1,17 @@
+Generate a KumpeApps bot logo in the shield style.
+
+IMPORTANT:
+- The robot visor must be completely empty (solid black)
+- No logos, no eyes, no symbols inside the visor
+- Preserve the oval visor shape with glossy reflection
+
+Style:
+- Neon green + black KumpeApps branding
+- Shield with black outer border and green inner border
+- Metallic robot holding jail bars (incarceration theme)
+- Brick or jail background texture
+- Ball and chain detail
+
+Text:
+KUMPEAPPS
+INCARCERATION BOT

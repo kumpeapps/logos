@@ -1,0 +1,65 @@
+{
+  "brand": "Kumpe Apps",
+  "colors": {
+    "primary": "#7EDB28",
+    "background": "#060606",
+    "panel": "#111111",
+    "panelAlt": "#181818",
+    "text": "#F5F5F5",
+    "muted": "#B7B7B7",
+    "border": "#262626",
+    "black": "#000000",
+    "white": "#FFFFFF"
+  },
+  "typography": {
+    "display": {
+      "font": "Space Grotesk",
+      "size": 72,
+      "weight": 800,
+      "lineHeight": 0.95
+    },
+    "h1": {
+      "font": "Space Grotesk",
+      "size": 56,
+      "weight": 800,
+      "lineHeight": 1.02
+    },
+    "h2": {
+      "font": "Space Grotesk",
+      "size": 40,
+      "weight": 700,
+      "lineHeight": 1.08
+    },
+    "h3": {
+      "font": "Inter",
+      "size": 28,
+      "weight": 700,
+      "lineHeight": 1.14
+    },
+    "body": {
+      "font": "Inter",
+      "size": 16,
+      "weight": 400,
+      "lineHeight": 1.6
+    },
+    "small": {
+      "font": "Inter",
+      "size": 14,
+      "weight": 400,
+      "lineHeight": 1.5
+    }
+  },
+  "radius": {
+    "sm": 14,
+    "md": 22,
+    "lg": 28
+  },
+  "spacing": {
+    "xs": 8,
+    "sm": 12,
+    "md": 16,
+    "lg": 24,
+    "xl": 32,
+    "2xl": 48
+  }
+}

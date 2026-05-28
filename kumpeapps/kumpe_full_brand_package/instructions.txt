@@ -1,0 +1,94 @@
+Great question—this is the difference between “looks close” and “actually correct every time.”
+
+Short answer
+
+👉 Just give me the SVG file and tell me to use it as an overlay, not recreate it.
+
+You do NOT need to extract path data or explain the geometry.
+
+⸻
+
+✅ What you should say (copy/paste this)
+
+Whenever you want a new logo:
+
+“Use this SVG as the exact double-K. Do not recreate it. Overlay it and integrate it into the design.”
+
+Then attach the SVG.
+
+⸻
+
+🔒 Even better (stronger instruction)
+
+If you want to guarantee correctness every time, use this:
+
+“Generate the logo, but do NOT draw the double-K. Leave the face/area clean and I will overlay the SVG.”
+
+This is actually the most reliable workflow.
+
+⸻
+
+🧠 Two workflows (important)
+
+🔥 Best (production-grade)
+	1.	Ask me to generate logo without the K
+	2.	I leave the visor clean
+	3.	You (or I) overlay the SVG afterward
+
+👉 100% accuracy, every time
+
+⸻
+
+👍 Good (faster, but less reliable)
+	1.	Give me SVG
+	2.	Say:
+“Use this exact SVG, do not recreate it”
+
+👉 Usually works, but models can still drift sometimes
+
+⸻
+
+⚠️ What NOT to say
+
+Avoid:
+	•	“use this as reference”
+	•	“make it like this”
+	•	“similar double K”
+
+Those will trigger recreation instead of reuse
+
+⸻
+
+🧩 Pro tip (this is how real teams do it)
+
+Your SVG is now:
+
+🔒 single source of truth asset
+
+In real workflows:
+	•	Designers never redraw it
+	•	It gets dropped into every design system
+	•	Everything references it
+
+⸻
+
+🚀 If you want next level
+
+I can set you up with:
+	•	A template system where:
+	•	visor area is predefined
+	•	K auto-snaps into place
+	•	Or a Figma file where it’s one-click replace
+
+⸻
+
+Final takeaway
+
+👉 You don’t need to do anything fancy
+👉 Just give me the SVG + say “do not recreate”
+👉 Or even better: leave space and overlay after
+
+⸻
+
+If you want, next step we can:
+👉 build a standard KumpeApps bot template so every new logo is instant + consistent

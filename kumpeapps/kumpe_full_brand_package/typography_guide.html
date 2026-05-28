@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kumpe Typography System</title>
+<style>
+:root {
+  --bg:#050505;
+  --surface:#111111;
+  --surface-2:#1a1a1a;
+  --text:#f5f5f5;
+  --muted:#b6b6b6;
+  --green:#7EDB28;
+  --border:#2b2b2b;
+  --radius:20px;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:var(--bg); color:var(--text); line-height:1.45;
+}
+.wrap { max-width:1100px; margin:0 auto; padding:48px 24px 80px; }
+.hero {
+  display:grid; grid-template-columns: 120px 1fr; gap:24px; align-items:center; margin-bottom:40px;
+}
+.hero img { width:120px; height:auto; }
+.card {
+  background:linear-gradient(180deg,var(--surface),var(--surface-2));
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:24px; margin-bottom:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,.28);
+}
+h1,h2,h3 { margin:0 0 12px; }
+h1 { font-size:52px; line-height:1.02; letter-spacing:-0.03em; }
+h2 { font-size:28px; color:var(--green); }
+h3 { font-size:20px; }
+.kicker { color:var(--green); text-transform:uppercase; letter-spacing:.16em; font-size:12px; font-weight:700; }
+.muted { color:var(--muted); }
+.grid { display:grid; gap:20px; }
+.grid-2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
+.scale div { padding:12px 0; border-top:1px solid var(--border); }
+.display { font-size:72px; line-height:.95; letter-spacing:-.05em; font-weight:800; }
+.h1 { font-size:56px; line-height:1.02; letter-spacing:-.04em; font-weight:800; }
+.h2 { font-size:40px; line-height:1.08; letter-spacing:-.03em; font-weight:700; }
+.h3 { font-size:28px; line-height:1.14; letter-spacing:-.02em; font-weight:700; }
+.h4 { font-size:22px; line-height:1.2; font-weight:600; }
+.body-lg { font-size:20px; line-height:1.5; }
+.body { font-size:16px; line-height:1.6; }
+.small { font-size:14px; line-height:1.5; }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.token { display:flex; justify-content:space-between; gap:12px; padding:12px 0; border-top:1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <img src="logo_512.png" alt="Kumpe Apps logo">
+    <div>
+      <div class="kicker">Brand System</div>
+      <h1>Kumpe Typography</h1>
+      <div class="muted">A bold, geometric, high-contrast type system designed to match the angular double-K mark.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Recommended stack</h2>
+    <div class="body">Primary UI font: <strong>Inter</strong><br>Brand/display option: <strong>Space Grotesk</strong> or <strong>Sora</strong><br>Monospace: <strong>JetBrains Mono</strong></div>
+  </div>
+
+  <div class="grid grid-2">
+    <div class="card scale">
+      <h2>Display scale</h2>
+      <div class="display">Display 72/0.95</div>
+      <div class="h1">Heading 56/1.02</div>
+      <div class="h2">Heading 40/1.08</div>
+      <div class="h3">Heading 28/1.14</div>
+      <div class="h4">Heading 22/1.20</div>
+      <div class="body-lg">Body Large 20/1.5</div>
+      <div class="body">Body 16/1.6</div>
+      <div class="small">Small 14/1.5</div>
+    </div>
+    <div class="card">
+      <h2>Rules</h2>
+      <div class="token"><span>Use uppercase sparingly</span><span class="muted">for labels / nav / buttons</span></div>
+      <div class="token"><span>Headlines</span><span class="muted">tight tracking</span></div>
+      <div class="token"><span>Buttons</span><span class="muted">600 weight, +2% letter spacing</span></div>
+      <div class="token"><span>Body copy</span><span class="muted">never below 16px on desktop</span></div>
+      <div class="token"><span>Code / specs</span><span class="muted mono">JetBrains Mono</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>CSS tokens</h2>
+<pre class="mono small">:root {
+  --font-sans: Inter, ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", Inter, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --text-display: 800 72px/0.95 var(--font-display);
+  --text-h1: 800 56px/1.02 var(--font-display);
+  --text-h2: 700 40px/1.08 var(--font-display);
+  --text-h3: 700 28px/1.14 var(--font-sans);
+  --text-body: 400 16px/1.6 var(--font-sans);
+  --text-small: 400 14px/1.5 var(--font-sans);
+}</pre>
+  </div>
+</div>
+</body>
+</html>

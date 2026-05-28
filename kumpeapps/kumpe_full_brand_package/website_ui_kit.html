@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kumpe UI Kit</title>
+<style>
+:root {
+  --bg:#060606; --panel:#111111; --panel-2:#181818; --text:#f5f5f5; --muted:#b7b7b7;
+  --green:#7EDB28; --green-2:#9df14a; --border:#262626; --radius:22px;
+  --shadow:0 18px 40px rgba(0,0,0,.32);
+}
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font-family:Inter, ui-sans-serif, system-ui, sans-serif; }
+.wrap { max-width:1200px; margin:0 auto; padding:32px 24px 80px; }
+.nav {
+  display:flex; align-items:center; justify-content:space-between; gap:16px; padding:16px 0 28px;
+}
+.brand { display:flex; align-items:center; gap:12px; font-weight:700; letter-spacing:.02em; }
+.brand img { width:42px; height:42px; }
+.links { display:flex; gap:12px; color:var(--muted); font-size:14px; }
+.hero {
+  display:grid; grid-template-columns:1.1fr .9fr; gap:28px; align-items:center; padding:24px 0 32px;
+}
+.panel {
+  background:linear-gradient(180deg,var(--panel),var(--panel-2));
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+}
+.hero-copy { padding:40px; }
+.kicker { color:var(--green); text-transform:uppercase; letter-spacing:.14em; font-size:12px; font-weight:700; }
+h1 { font-size:64px; line-height:.97; margin:10px 0 14px; letter-spacing:-.05em; }
+p { color:var(--muted); font-size:18px; line-height:1.6; }
+.actions { display:flex; gap:12px; padding-top:10px; }
+.btn {
+  border:1px solid var(--border); color:var(--text); background:#151515; padding:14px 18px;
+  border-radius:14px; font-weight:700; letter-spacing:.02em;
+}
+.btn.primary { background:var(--green); color:#000; border-color:transparent; }
+.preview { padding:26px; display:grid; place-items:center; min-height:460px; }
+.preview img { width:min(90%, 420px); height:auto; filter:drop-shadow(0 0 24px rgba(126,219,40,.18)); }
+
+.section-title { font-size:24px; color:var(--green); margin:34px 0 16px; }
+.grid-3 { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
+.card { padding:24px; }
+.eyebrow { color:var(--green); font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.14em; margin-bottom:10px; }
+.metric { font-size:36px; font-weight:800; line-height:1; margin:0 0 8px; }
+.small { font-size:14px; color:var(--muted); }
+.form { display:grid; gap:12px; }
+.input {
+  width:100%; background:#0e0e0e; color:var(--text); border:1px solid var(--border); border-radius:14px; padding:14px 16px;
+}
+.footer { color:var(--muted); font-size:14px; padding-top:30px; }
+@media (max-width: 900px) {
+  .hero, .grid-3 { grid-template-columns:1fr; }
+  h1 { font-size:46px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="nav">
+    <div class="brand"><img src="logo_128.png" alt=""> KUMPE APPS</div>
+    <div class="links"><span>Platform</span><span>Security</span><span>Docs</span><span>Contact</span></div>
+  </div>
+
+  <section class="hero">
+    <div class="panel hero-copy">
+      <div class="kicker">Modern product identity</div>
+      <h1>Bold software branding built around the double K.</h1>
+      <p>This UI kit turns the Kumpe Apps mark into a product-ready visual system with a clean dark surface, bright action color, rounded geometry, and strong spacing.</p>
+      <div class="actions">
+        <button class="btn primary">Get Started</button>
+        <button class="btn">View Docs</button>
+      </div>
+    </div>
+    <div class="panel preview">
+      <img src="logo_1024.png" alt="Kumpe Apps logo">
+    </div>
+  </section>
+
+  <div class="section-title">Core components</div>
+  <div class="grid-3">
+    <div class="panel card">
+      <div class="eyebrow">Buttons</div>
+      <div class="actions"><button class="btn primary">Primary</button><button class="btn">Secondary</button></div>
+    </div>
+    <div class="panel card">
+      <div class="eyebrow">Stats</div>
+      <div class="metric">99.9%</div>
+      <div class="small">Uptime surface example for marketing pages.</div>
+    </div>
+    <div class="panel card">
+      <div class="eyebrow">Inputs</div>
+      <div class="form"><input class="input" placeholder="Email"><input class="input" placeholder="Company"></div>
+    </div>
+  </div>
+
+  <div class="section-title">Design tokens</div>
+  <div class="panel card">
+<pre style="margin:0; white-space:pre-wrap; color:#dcdcdc;">{
+  "colors": {
+    "background": "#060606",
+    "panel": "#111111",
+    "panelAlt": "#181818",
+    "text": "#F5F5F5",
+    "muted": "#B7B7B7",
+    "primary": "#7EDB28",
+    "border": "#262626"
+  },
+  "radius": {
+    "sm": 14,
+    "md": 22,
+    "lg": 28
+  },
+  "shadow": "0 18px 40px rgba(0,0,0,.32)"
+}</pre>
+  </div>
+
+  <div class="footer">Kumpe Apps UI kit preview. Use as a starting point for website, dashboard, and launch page design.</div>
+</div>
+</body>
+</html>
